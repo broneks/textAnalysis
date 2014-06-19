@@ -1,9 +1,7 @@
-var input = 'Is that you, John Wayne? Is this me?';
-
 obj = {
 	text: null,
 
-	init: function() {
+	init: function(input) {
 		var split = input.split(/\W+/);
 
 		// disregard last array item if it's an empty string
@@ -29,7 +27,7 @@ obj = {
 };
 
 (function() {
-	obj.init(input);
+	obj.init('Is that you, John Wayne? Is this me?');
 
 	console.log(obj.text);
 	console.log(obj.wordCount());
