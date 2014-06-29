@@ -20,9 +20,6 @@ obj = {
 	},
 
 	wordMatch: function(word, exactMatch) {
-		// default exactMatch to false if it's undefined
-		var exactMatch = (typeof exactMatch === 'undefined' ? false : exactMatch);
-
 		return this.textArray.filter(function(item) {
 			if (exactMatch) {
 				return item === word;
