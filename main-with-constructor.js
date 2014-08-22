@@ -3,7 +3,7 @@
 function TextObj(inputStr) {
     this.original = inputStr;
 
-    var _init = (function(inputStr) {
+    (function(inputStr) {
         var words         = inputStr.split(/\W+/),
             lastWordsItem = words[words.length - 1];
 
